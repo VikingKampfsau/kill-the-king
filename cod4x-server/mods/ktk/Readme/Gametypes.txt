@@ -1,0 +1,104 @@
+*****************************************************
+*		   Gametypes			    *
+*****************************************************
+* The mod is about the gametype KtK,      *
+* other gametypes got canceled before finalisation. *
+*****************************************************
+
+Kill the King:
+
+Basically this gametype is a mix of different mods like VIP, Zombie and Gungame.
+One team, the guards, have the target to protect their king so he will not be killed by the opponent team.
+The other team, the assassins, have the target to eliminate the opponents king within the roundtime.
+
+The Teams:
+King (leader of the guards):
+ - Objective: Surviving the round
+ - Weapons: Depending on the server setting, by default a shotgun and a .44 Magnum
+ - Health: Depending on the server setting, by default 300
+ - Speed: 0.9, with the bought perk 1
+ - The ammo of his weapons will increase when he is getting a kill with it
+
+Guards:
+ - Objective: Protecting the king from getting killed by the assassins
+ - Weapons: Guards start with a pistol, their weapon will be replaced when they get kills
+ - Health: 100
+ - Speed: 1
+ - Killstreaks: 1.Fast Reloading, 2.RC-XD, 3.Poison, 4.Airstrike, 5.Mortars, 6.Gunner in a helicopter, 7.AC130
+ - If a guard gets shot by an Assassin he will respawn as an Assassin.
+
+The Terminator:
+ - Weapons: A Minigun
+ - Health: Depending on the server setting, by default 300
+ - Speed: 1, but he's unable to sprint
+ 
+VIP's (only as guards):
+ - Increased health (+20 hp)
+ - An RPGs at start of the round
+ - Abillity to revive themselves
+
+Assassins:
+ - Objective: Killing the king
+ - Weapons: Normal Assassins do spawn randomly with an Intervention, a R700, a Mosin Nagat or a Knife, 
+			The first Assassind weapon are depending on the server setting, by default it's a Crossbow (also explosive bolts) and a Mosin Nagat.
+ - Health: 100
+ - Speed: Scope 1, Rifle 1.05, Knife 1.15
+ - Killstreaks: 1.Throwable Knifes, 2.Silenced M21
+
+The Dog:
+ - Weapons: A Bite (Damage depends on server setting)
+ - Health: Depending on the server setting, by default 100
+ - Speed: 1.3
+
+*****************************************************
+*	Unfinished - I don't think i will finish them	*
+*****************************************************
+ 
+Capture the Code:
+ 
+The target for the assassins in the gametype "Capture the Code" is to find and kill the king, so he drops a suitcase with secret informations.
+After capturing the suitcase they have to protect it for a set amount of time.
+The target for the guards is to protect the king and his suitcase.
+
+The Teams:
+Guards:
+ - Objective: Protecting the king and his suitcase
+ - Weapons: Free Choice through a menu
+ - Health: 80
+ - Speed: 1
+ - Killstreaks: 1.Fast Reloading, 2.Airstrike, 3.Mortars, 4.Gunner in a helicopter
+ - Additionally: When they recapture the lost suitcase the needed time for the assassins will raise again.
+
+King (leader of the guards):
+ - Objective: Trying not to loose the suitcase
+ - Weapons: Free Choice through a menu
+ - Health: 300
+ - Speed: 0.9
+  - Additionally: After death he will turn into a normal guard
+
+Assassins:
+ - Objective: Killing the king and stealing the suitcase
+ - Weapons: Free classchoice through a menu
+ - Health: 130
+ - Speed: 1
+
+Hack the Terminals:
+
+The target for the assassins in the gametype "Hack the Terminals" is to upload viruses to all terminals within the map, so they are out of order.
+The target for the guards is to protect the terminals.
+
+The Teams:
+Guards:
+ - Objective: Protecting the terminals
+ - Weapons: Free Choice through a menu
+ - Health: 80
+ - Speed: 1
+ - Killstreaks: 1.Fast Reloading, 2.Airstrike, 3.Mortars, 4.Gunner in a helicopter
+
+Assassins:
+ - Objective: Uploading viruses to the terminals
+ - Weapons: Free classchoice through a menu
+ - Health: 130
+ - Speed: 1
+ 
+Additionally: All players have 1 life only.

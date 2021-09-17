@@ -1,0 +1,51 @@
+Admins can use the following commads through rcon or the admin menu ingame (after logging in the admin menu).
+(# is the slot of the player)
+
+/rcon admin_changeMap <mapname> (use this to change the map when using bots!)
+
+/rcon admin_sayadmin # (a big message on screen with title and sound)
+/rcon admin_saybold # (a simple message on the screen)
+/rcon admin_burn# (toasts a player to death)
+/rcon admin_explode # (explodes a player)
+/rcon admin_afk # (switch a player to spectators)
+/rcon admin_switch # (switch a player to the opposite team, if the play was spec the team will be set random)
+/rcon admin_kill # (kill a player)
+/rcon admin_disableweapon # (remove the weapons from a player)
+/rcon admin_enableweapon # (give the weapons back to the player)
+/rcon admin_kick # (kicks a player)
+/rcon admin_ban # (bans a player)
+/rcon admin_rankrestore "#:rank:prestige" (changes the rank/prestige of a player)
+/rcon admin_spawn # (respawn a player)
+/rcon admin_teleport #;# (teleport a player to the location of an other player)
+/rcon admin_rebootServer <mapname> (reboot the server and load the map - this is useful when changing scripts/config)
+/rcon admin_dvarChange <dvar> <value> (change a dvar that is protcted by default
+/rcon admin_ExecutePlayerCmd #:<cmd> (force a player to do sth - like reconnect)
+/rcon admin_getss # (get a pb like screenshot from a player
+/rcon admin_changeEvent <even name> (change to a new mini gametype)
+/rcon admin_mutePlayer #:<reason> (mute / unmute a player = text chat)
+/rcon admin_noclip # (enable/disable noclip for a player (was added for debugging reasons)
+/rcon admin_freeze # (freeze/unfreeze a player (was added for debugging reasons)
+
+To login to the admin menu you can use one of the following ways:
+
+1. Login using a bind:
+Create a bind like this one: bind X "OpenScriptMenu -1 login:USERNAME:PASSWORD"
+After executing it ingame a message on screen will appear and tell you if have succesfully been logged in or not.
+Press ESC and open the admin menu.
+
+2. Login directly through the menu:
+Press ESC and try to open the admin menu.
+Since you aren't logged in yet a menu will open asking you to enter your login data.
+Enter your login data like that: OpenScriptMenu -1 login:USERNAME:PASSWORD
+After clicking on accept a message on screen will appear and tell you if have succesfully been logged in or not.
+Press ESC and open the admin menu again if it's not automatically popping up.
+
+3. Login using the game console:
+Open the console (^ or ~) and enter your login data like that: /OpenScriptMenu -1 login:USERNAME:PASSWORD
+After executing it a message on screen will appear and tell you if have succesfully been logged in or not.
+Press ESC and open the admin menu.
+
+4. Login with a config (on your pc - not the server)
+Go to the main folder of your CoD4 game and create a new file called "ktkadminlogin.cfg" THE NAME IS IMPORTANT
+Add this line with a text editor and change the username and password: OpenScriptMenu -1 login:USERNAME:PASSWORD
+Whenever you enter a ktk server it will try to automatically login!

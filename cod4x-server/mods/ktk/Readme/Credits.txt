@@ -1,0 +1,111 @@
+*****************************************************
+*		    Credits			    *
+*****************************************************
+
+By Hacker22:
+Double Barreled Shotgun
+Mosin Nagat
+MG42
+
+By Rycoon:
+WaitForPlayers script
+TeamChange script
+Poison Gas Grenade
+Gore Effect for Crossbow
+
+By Sanya:
+Crossbow (Sanya & Susel)
+.44 Magnum
+Juggernaut
+
+By Etheross:
+J.F. Kennedy
+Makarov
+Intervention
+
+By Mr-X:
+Kingmarker
+Teamlogos
+Prestigeicons
+Admin/Vip Badge
+
+By Zeroy:
+Silenced M21
+
+By Kiki:
+Throwing Knife
+
+By =TC= Buster:
+Sniper Winter skin
+
+By Mamba:
+Famas
+Ump45
+
+By Braxi:
+Basic script to use different languages
+
+By =|SF|= PhoeniX:
+Aug
+
+By {S4K}Bear:
+Minigun
+
+By LineX Enemy:
+Custom MainMenu Background
+
+By LineX Vio:
+Custom Loadbar on Loadscreen
+
+By Susel:
+Black Ops AWM (L96)
+
+Old translations:
+- French: Linex Valias
+- Hungarian: club27|rocco & club27|Neo
+- Italian:	[SR]ALUCARD|666| & [BHS]MaXPayne 
+- Polish:	Packie & Braxi
+- Russian:	LineX Putin
+- Spanish:	#FNRP#ZRBTeam
+
+Translations completely redone by:
+- French: FarT, TheTrueGod
+- German: Viking
+- Hungarian: Fruben
+- Italian: JamesNeg
+- Polish: oxider, Aleksandra, GrzeSielski, TrxuM
+- Russian: wonder
+- Spanish: kway, TrxuM
+
+*****************************************************
+*		     Thanks			    *
+*****************************************************
+
+Thanks to Infinity Ward for providing the tools/assets.
+
+Thanks to Rycoon for all the help when i was stuck
+and for hosting the (early) testservers.
+
+Thanks to Braxi, iCore and 3aGl3 for answering all my stupid
+questions and helping when ever i was stuck.
+
+Thanks to the guys from the ninja clan for all the new epic ideas.
+Some i would like to name: Aura<3, AlUrNiMa, Nin)J(a, Oldmeister and Rhoyder.
+
+Thanks to TheFrenchGhosty from pussthecat.org for hosting the ninja edition
+and constantly debugging it to fix the remaining bugs.
+
+Thanks to everyone still playing the mod!
+
+Thanks to all BETA-Testers!
+
+*****************************************************
+*	       Additional Notes	    		    *
+*****************************************************
+
+All original and composed textures or assets in this 
+modification remain property of the sources respective
+owners.
+
+All used sound tracks are licensed by it's original
+owners and were used for promotional use only.

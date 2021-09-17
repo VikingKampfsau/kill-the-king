@@ -1,0 +1,35 @@
+*****************************************************
+*				New/Replaced Weapons			    *
+*****************************************************
+AC130						skorpion_acog_mp
+Aug (+attachments)			g36c_mp (+attachments)
+Crossbow					gl_mp
+Crossbow (Explosive)		c4_mp
+Dog							defaultweapon_mp
+Doublebarreled Shotgun		m1014_mp
+Famas (+attachments)		uzi_mp (+attachments)
+Intervention				m40a3_mp
+Javelin						javelin_mp
+Juggernaut					winchester1200_grip_mp
+Katana						skorpion_silencer_mp
+Knife						knife_mp
+L96A1						m40a3_acog_mp
+Ladderclimb					ladderclimb_mp (used to play anim)
+MG42						rpd_acog_mp
+Magnum						beretta_silencer_mp
+Marker (for Carepackage)	marker_mp
+Mini-Uzi (+attachments)		ak74u_mp (+attachments)
+Minigun						saw_acog_mp
+Mortars						mortar_mp
+Nuke						m1014_grip_mp
+Poison Gas					smoke_grenade_mp
+Predator					ak74u_acog_mp
+RC Car						radar_mp
+Repeater (like Mosin Nagat)	remington700_acog_mp
+Riotshield					riotshield_mp
+Semtex Grenade				frag_mp
+Sentry Gun					m60e4_acog_mp
+Silenced m21				m21_mp
+Syrette						concussion_grenade_mp
+Throwing knife				frag_grenade_mp
+Ump45 (+attachments)		mp5_mp (+attachments)

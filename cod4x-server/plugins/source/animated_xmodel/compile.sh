@@ -1,0 +1,1 @@
+gcc -shared -o animatedxmodel.so -fPIC animatedxmodel.c
