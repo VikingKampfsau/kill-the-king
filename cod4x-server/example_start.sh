@@ -1,0 +1,1 @@
+./cod4x18_dedrun +set net_port 28960 +set developer 0 +set r_xassetnum "material=2560 xmodel=2048 xanim=3200 image=3000" +set sv_maxclients "32" +set dedicated 2 +set fs_basepath "/home/cod4x/" +set fs_homepath "/home/cod4x/" +set fs_game mods/ktk +exec "config/codserver.cfg" +map_rotate
