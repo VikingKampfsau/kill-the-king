@@ -1,31 +1,14 @@
 init()
 {
-	setDvar("sv_hostname", "^0[Ninja]^5Kill the King ^1| ^7KTK ^12.20 (June 2018)");
-	setDvar("scr_mod_xpmulti", "2");
-	 
 	setDvar("scr_mod_healthregen", "7");
 	setDvar("scr_mod_news_3", "^1BEAST ^5KING ^1EVENT!!!");
-	setDvar("scr_motd", "^1BEAST ^5KING ^1EVENT!!! ^7event by ^0[Ninja]^1!");
 	setDvar("scr_mod_WelcomeMsgBold", "BEAST KING EVENT! ^1KNIFE TO GET NEW GUARDS");
 
 	setDvar("scr_mod_ktk_roundevents", "0");
 	setDvar("scr_ktk_numlives", "0");
 
 
-	setDvar("sv_mapRotation", "gametype ktk map mp_shipment");
-
-	setDvar("scr_mod_mapvote_playerbased", "1");
-	setDvar("rotation_few_players_amount", "10");
-	setDvar("rotation_some_players_amount", "18");
-
-	setDvar("rotation_few_players", "mp_killhouse;mp_shipment;mp_showdown;mp_bazaar;mp_construction_arena;mp_custule;mp_funland;mp_lake;mp_modern_rust;mp_new2k13;mp_ninja_hill;mp_ninja_maze;mp_ninja_seasons;mp_nuketown;mp_overlook;mp_poolparty;mp_portalhouse;mp_shipment3;mp_uber;mp_uprise;mp_wawa;mp_zomarena_final");
-	setDvar("rotation_some_players", "mp_bog;mp_crash;mp_showdown;mp_anchorage;mp_battlearena;mp_bazaar;mp_c4s_minecraft;mp_castle_v1;mp_construction_arena;cube;mp_funland;mp_lake;mp_modern_rust;mp_new2k13;mp_ninja_forts;mp_ninja_hill;mp_ninja_seasons;mp_nuketown;mp_osg_hijacked;mp_poolparty;mp_qlimax_aim;mp_shipment3;mp_toujane_v2;mp_toybox4_b2;mp_uber;mp_uprise;mp_wawa;mp_zomarena_final;mp_zombie_ski");
-	setDvar("rotation_many_players", "mp_backlot;mp_bog;mp_crash;mp_strike;mp_showdown;mp_battlearena;mp_bo2mir;mp_bo2raid;mp_c4s_minecraft;mp_castle_v1;cube;mp_d2c;mp_hunt;mp_legotown;maze1;mp_meanstreet2;mp_mw2_term;mp_ninja_forts;mp_ninja_hill;mp_nuketown;mp_offices_v3;mp_osg_hijacked;mp_qlimax_aim;mp_toujane_v2;mp_toybox4_b2;mp_uber;mp_zombie_glass");
-
-	setDvar("scr_ktk_timelimit", "5");
-	setDvar("scr_ktk_roundlimit", "10");
-	setDvar("scr_ktk_roundswitch", "5");
-	setDvar("scr_ktk_king_health", "1500");
+	setDvar("scr_ktk_king_health", "1000");
 	setDvar("scr_ktk_dog_damage", "200");
 	setDvar("scr_ktk_terminator", "0");
 	setDvar("scr_ktk_assassin_switch", "1");
@@ -75,8 +58,8 @@ init()
 	setDvar("scr_hardpoint_guard_Predator", "0");
 	setDvar("scr_hardpoint_guard_Nuke", "0");
 
-	setDvar("scr_mod_weaponbox_priceGuards", "20");
-	setDvar("scr_mod_weaponbox_priceAssassins", "20");
+	setDvar("scr_mod_weaponbox_priceGuards", "10");
+	setDvar("scr_mod_weaponbox_priceAssassins", "10");
 
 	setDvar("scr_mod_weaponbox_assassinweapon_1", "c4_mp");
 	setDvar("scr_mod_weaponbox_assassinweapon_2", "m21_mp");

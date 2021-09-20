@@ -1,11 +1,8 @@
 init()
 {
-	setDvar("sv_hostname", "^0[Ninja]^5Kill the King ^1| ^7KTK ^12.20 (June 2018)");
 	setDvar("scr_mod_xpmulti", "3");
 
 	setDvar("scr_mod_news_3", "^1S^2U^3N^4D^5A^6Y ^1F^2U^3N^4D^5A^6Y^1! ^13X XP!! ^2LETS GO!!");
-	setDvar("scr_mod_news_4", "^1EVENT ^2BY ^0[Ninja]^3!!");
-	setDvar("scr_motd", "^1S^2U^3N^4D^5A^6Y ^1F^2U^3N^4D^5A^6Y^1! ^73X XP!");
 
 	setDvar("scr_ktk_numlives", "0");
 	setDvar("scr_mod_ktk_roundevents", "1");

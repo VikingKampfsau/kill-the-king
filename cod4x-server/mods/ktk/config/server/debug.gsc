@@ -10,5 +10,5 @@ init()
 	// Debugging 
 	//==============================================================================
 	//Log debug info in games_mp.log 0 = No, 1 = ALL (Info,Suggestions,Bugs,Warnings,Errors), 2 = SUG (Suggestions,Bugs,Warnings,Errors), 3 = BUG (Bugs,Warnings,Errors), 4 = WARN (Warnings,Errors), 5 = ERR (Errors Only)
-	setDvar("scr_mod_debug", "1");
+	setDvar("scr_mod_debug", "0");
 }

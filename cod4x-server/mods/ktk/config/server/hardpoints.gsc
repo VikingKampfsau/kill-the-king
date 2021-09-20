@@ -10,14 +10,14 @@ setDvar("scr_hardpoint_persists", "1"); // players get unused hardpoints when co
 setDvar("scr_hardpoint_system", "1"); // 0 = Players can earn ALL hardpoints, 1 = Players have to select up to 3 hardpoints and can only earn these (default = 0)
 	setDvar("scr_hardpoint_kingsystem", "0"); //The king also uses the new hardpoint system (0 = No, define the killstreaks yourself, 1 = Yes)
 
-	setDvar("scr_hardpoint_rc_heli_health", "100");
-	setDvar("scr_hardpoint_rc_heli_alivetime", "20");
-	setDvar("scr_hardpoint_rc_heli_reloadtime", "2");
-	setDvar("scr_hardpoint_rc_heli_ammo", "100");
+	setDvar("scr_hardpoint_rc_heli_health", "100");	//amount of damage the mini helicopter can take before it explodes (default = 100)
+	setDvar("scr_hardpoint_rc_heli_alivetime", "20");	//maximum time in seconds a player can fly with the mini helicopter (default = 15)
+	setDvar("scr_hardpoint_rc_heli_reloadtime", "2");	//time in seconds it takes the mini helicopter to reload his weapon (default = 2)
+	setDvar("scr_hardpoint_rc_heli_ammo", "100");	//maximum bullets the mini helicopter can fire before he has to reload (default = 100)
 
 	// 0 = disabled, > 0 = needed amount of kills
 	setDvar("scr_hardpoint_guard_rccar", "3");
-	setDvar("scr_hardpoint_guard_rchelicopter", "3");
+	setDvar("scr_hardpoint_guard_rchelicopter", "8");
 	setDvar("scr_hardpoint_guard_poison", "5");
 	setDvar("scr_hardpoint_guard_airstrike", "7");
 	setDvar("scr_hardpoint_guard_mortar", "9");

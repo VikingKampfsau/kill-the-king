@@ -4,9 +4,9 @@ init()
 	// Random Weaponbox 
 	//==============================================================================
 
-	setDvar("scr_mod_weaponbox", "1");	// 0 = Disabled, 1 = Enabled (normal), 2 = Enabled (no collision)
-	setDvar("scr_mod_weaponbox_priceGuards", "50");	// the score a player needs to use the box
-	setDvar("scr_mod_weaponbox_priceAssassins", "50");	// the score a player needs to use the box
+	setDvar("scr_mod_weaponbox", "2");	// 2 = Disabled, 1 = Enabled (normal), 2 = Enabled (no collision)
+	setDvar("scr_mod_weaponbox_priceGuards", "20");	// the score a player needs to use the box
+	setDvar("scr_mod_weaponbox_priceAssassins", "20");	// the score a player needs to use the box
 	setDvar("scr_mod_weaponbox_picktime", "1");	// time till the player gets his new weapon
 
 	// weapons the guards can buy at the box

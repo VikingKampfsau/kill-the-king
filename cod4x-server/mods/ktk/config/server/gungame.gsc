@@ -6,7 +6,7 @@ init()
 	// The weapons the player will achieve after a kill (defenders only)
 	// "scr_gungame_weapon1" is the weapon the player will start with
 		
-	setDvar("scr_gungame_weapon1", "colt45_mp");
+	setDvar("scr_gungame_weapon1", "beretta_mp");
 	setDvar("scr_gungame_weapon2", "deserteagle_mp");
 	setDvar("scr_gungame_weapon3", "beretta_silencer_mp");
 	setDvar("scr_gungame_weapon4", "uzi_mp");
