@@ -35,7 +35,7 @@ SwitchEmptyMap(emptytime, switchtime)
 	{
 		wait 60;
 
-		if(isDefined(level.ktkPlayers) && level.ktkPlayers.size > 0)
+		if(isDefined(level.ktkPlayers) && level.ktkPlayers > 0)
 			emptytime = 0;
 		else
 			emptytime++;
