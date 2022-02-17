@@ -101,14 +101,15 @@ heli_path_graph()
 	}	
 	
 	// loop paths array
-	consolePrint("^1heli debug - map: " + level.script);
-	consolePrint("^1heli debug - start size: " + loop_start.size);
+	//consolePrint("^1heli debug - map: " + level.script);
+	//consolePrint("^1heli debug - start size: " + loop_start.size);
+	//consolePrint("^1heli debug - start 0 origin: " + loop_start[0].origin);
 	for (i=0; i<loop_start.size; i++)
 	{
 		if(!isDefined(loop_start[i]) || !isDefined(loop_start[i].target) || loop_start[i].target == "")
 			continue;
 	
-		consolePrint("^1heli debug - start target: " + loop_start[i].target);
+		//consolePrint("^1heli debug - start target: '" + loop_start[i].target + "'");
 	
 		startnode = getent( loop_start[i].target, "targetname" );
 		level.heli_loop_paths[level.heli_loop_paths.size] = startnode;
@@ -126,7 +127,7 @@ heli_path_graph()
 		if(!isDefined(crash_start[i]) || !isDefined(crash_start[i].target) || crash_start[i].target == "")
 			continue;
 	
-		consolePrint("^1heli debug - crash target: " + crash_start[i].target);
+		//consolePrint("^1heli debug - crash target: " + crash_start[i].target);
 		
 		crash_start_node = getent( crash_start[i].target, "targetname" );
 		level.heli_crash_paths[level.heli_crash_paths.size] = crash_start_node;

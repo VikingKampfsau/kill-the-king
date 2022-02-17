@@ -93,7 +93,7 @@ init()
 
 	level.numHardpointReservedObjectives = 0;
 
-	maps\mp\_helicopter::init();
+	//maps\mp\_helicopter::init();
 }
 
 distance2d(a,b)

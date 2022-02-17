@@ -115,6 +115,7 @@ init()
   
   if(path_start.size || loop_start.size) {
     setDvar("dynamic_helipath", "map already has helipath");
+	thread maps\mp\_helicopter::init();
     return;
   }
   
