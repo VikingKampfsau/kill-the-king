@@ -62,7 +62,7 @@
  * It prepares the parameters to call the helipath_create function and
  * takes into account the options set in the script config section of this
  * function and the server config. It finally calls helipath_create and after
- * that maps\mp\_helicopter::init() to initialize the created helicopter path. 
+ * returns to maps\mp\_helicopter::init() to initialize the created helicopter path. 
  * 
  * The script config section of this function
  * should be used by the modder to add map specific options. They can be
@@ -98,9 +98,9 @@
  */ 
 init()
 {
-	//VIKING - I always want a helipath to be created if there is none!
-	if(getDvarInt("scr_heli_enabled"))
-		setDvar("scr_create_helipath" , 1);
+  //VIKING - I always want a helipath to be created if there is none!
+  if(getDvarInt("scr_heli_enabled"))
+    setDvar("scr_create_helipath" , 1);
 
   // ============ SCRIPT CONFIG ============
   // add hard coded map specific options here
@@ -115,7 +115,6 @@ init()
   
   if(path_start.size || loop_start.size) {
     setDvar("dynamic_helipath", "map already has helipath");
-	thread maps\mp\_helicopter::init();
     return;
   }
   
@@ -210,10 +209,10 @@ init()
                            delay_circle);
   resetTimeout();
   
-  if (result) {
-    thread maps\mp\_helicopter::init(); //Viking: calling this as a thread to clear the used variables a bit earlier
+  if(result)
     setDvar("dynamic_helipath", "enabled");
-  }  
+  else
+    setDvar("dynamic_helipath", "disabled");  
 }
 
 /**

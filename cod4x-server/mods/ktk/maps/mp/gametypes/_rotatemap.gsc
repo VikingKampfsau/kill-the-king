@@ -21,16 +21,14 @@ init()
 	level.serverEmptyMapSwitch = undefined;
 
 	if(getdvarint("scr_mod_empty_time") > 0)
-	{
-		emptytime = 0;
-		switchtime = int(getdvarint("scr_mod_empty_time"));
-		
-		thread SwitchEmptyMap(emptytime, switchtime);
-	}
+		thread SwitchEmptyMap();
 }
 
-SwitchEmptyMap(emptytime, switchtime)
+SwitchEmptyMap()
 {
+	emptytime = 0;
+	switchtime = int(getdvarint("scr_mod_empty_time"));
+
 	while(emptytime < switchtime)
 	{
 		wait 60;

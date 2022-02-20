@@ -144,8 +144,17 @@ init()
 	path_start = getentarray( "heli_start", "targetname" ); 		// start pointers, point to the actual start node on path
 	loop_start = getentarray( "heli_loop_start", "targetname" ); 	// start pointers for loop path in the map
 
-	if ( !path_start.size && !loop_start.size)
-		return;
+	if(!path_start.size && !loop_start.size)
+	{
+		maps\mp\gametypes\_helipath::init();
+		
+		//recheck if the script has created a helipath
+		path_start = getentarray( "heli_start", "targetname" ); 		// start pointers, point to the actual start node on path
+		loop_start = getentarray( "heli_loop_start", "targetname" ); 	// start pointers for loop path in the map
+		
+		if(!path_start.size && !loop_start.size)
+			return;
+	}
 		
 	precachehelicopter( "vehicle_cobra_helicopter_fly" );
 	precachehelicopter( "vehicle_mi24p_hind_desert" );

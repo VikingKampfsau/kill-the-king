@@ -64,6 +64,12 @@ init()
 	level.bots = [];
 	kickAllBots();
 	
+	//older versions of ktk had a second bot script which was changing the select_map.gsc of pezbot
+	//in those versions this variable was false and and "else" of the next if clause was not outcommented.
+	//now waypoints are loaded into an array within a cod4x plugin, so this is not required anymore
+	//and to keep things easier to follow i just set this variable to true and commented the mentioned "else" out.
+	level.waypointPlugin = true;
+	
 	level.ktk_bots_startRoundWhenEmpty = getDvarInt("scr_ktk_bots_startRoundWhenEmpty");
 	level.ktk_bots_maxDistance = getDvarInt("scr_ktk_bots_maxDistance");
 	level.ktk_bots_trackKing = getDvarInt("scr_ktk_bots_trackKing");
@@ -84,7 +90,6 @@ init()
 	if(game["customEvent"] == "traitors" || game["customEvent"] == "hideandseek")
 		return;
 	
-	level.waypointPlugin = true;
 	if(level.waypointPlugin)
 		setDvar("waypoint_filepath", "/waypoints/" + level.script + "_waypoints");	
 	else

@@ -51,7 +51,6 @@ main()
 	thread maps\mp\gametypes\_predator::init();
 	thread maps\mp\gametypes\_javelin::init();
 	thread maps\mp\gametypes\_mapvote::init();
-	thread maps\mp\gametypes\_helipath::init();
 	thread maps\mp\gametypes\_maprecords::init();
 	thread maps\mp\gametypes\_ladders::init();
 	thread maps\mp\gametypes\_rchelicopter::init();
