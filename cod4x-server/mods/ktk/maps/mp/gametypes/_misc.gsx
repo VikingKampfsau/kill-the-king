@@ -2123,6 +2123,7 @@ GetSkyHeight()
 			height = heli_loop_start[0].origin[2];
 			
 			heli_nodes = [];
+			heli_nodes[0] = heli_loop_start[0];
 			for(i=1;i<20;i++)
 			{
 				heli_nodes[i] = getEnt(heli_nodes[i-1].target, "targetname");
