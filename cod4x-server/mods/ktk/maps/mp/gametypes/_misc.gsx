@@ -2116,25 +2116,29 @@ GetSkyHeight()
 {
 	if(isDefined(level.heli_paths))
 	{
-		heli_nodes = [];
-		heli_nodes[0] = getent("heli_loop_start", "targetname");
-		height = heli_nodes[0].origin[2];
+		heli_loop_start = getEntArray("heli_loop_start", "targetname");
 		
-		for(i=1;i<20;i++)
+		if(isDefined(heli_loop_start) && heli_loop_start.size > 0)
 		{
-			heli_nodes[i] = getent(heli_nodes[i-1].target, "targetname");
+			height = heli_loop_start[0].origin[2];
 			
-			if(!isDefined(heli_nodes[i]))
-				break;
+			heli_nodes = [];
+			for(i=1;i<20;i++)
+			{
+				heli_nodes[i] = getEnt(heli_nodes[i-1].target, "targetname");
+				
+				if(!isDefined(heli_nodes[i]))
+					break;
+				
+				if(heli_nodes[i].target == heli_nodes[0].target)
+					break;
+				
+				if(heli_nodes[i].origin[2] >= height)
+					height = heli_nodes[i].origin[2];
+			}
 			
-			if(heli_nodes[i].target == heli_nodes[0].target)
-				break;
-			
-			if(heli_nodes[i].origin[2] >= height)
-				height = heli_nodes[i].origin[2];
+			return height;
 		}
-		
-		return height;
 	}
 	
 	trace = BulletTrace((level.mapCenter[0], level.mapCenter[1], 100000), level.mapCenter, false, undefined);

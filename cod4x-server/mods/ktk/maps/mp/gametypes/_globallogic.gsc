@@ -764,10 +764,10 @@ spawnPlayer()
 		}
 	}
 
-	if ( getdvar( "scr_showperksonspawn" ) == "" )
-		setdvar( "scr_showperksonspawn", "1" );
-		
-	if ( !level.splitscreen && getdvarint( "scr_showperksonspawn" ) == 1 && game["state"] != "postgame" )
+	//KILL THE KING
+	//do not show the perks on spawn - there might be so many unlocks that the hud limit is hit
+	//would look shit anyways to have 10 perk images at every spawn
+	/*if ( !level.splitscreen && getdvarint( "scr_showperksonspawn" ) == 1 && game["state"] != "postgame" )
 	{
 		perks = getPerks( self );
 		self showPerk( 0, perks[0], -50 );
@@ -775,7 +775,7 @@ spawnPlayer()
 		self showPerk( 2, perks[2], -50 );
 		self thread hidePerksAfterTime( 3.0 );
 		self thread hidePerksOnDeath();
-	}
+	}*/
 	
 	prof_end( "spawnPlayer_postUTS" );
 	
@@ -4134,6 +4134,10 @@ Callback_StartGameType()
 	
 	if( getdvar( "r_reflectionProbeGenerate" ) == "1" )
 		level waittill( "eternity" );
+
+	//KILL THE KING
+	//close any file that was previously FS_opened
+	FS_FCloseAll();
 
 	thread maps\mp\gametypes\_persistence::init();
 	thread maps\mp\gametypes\_menus::init();

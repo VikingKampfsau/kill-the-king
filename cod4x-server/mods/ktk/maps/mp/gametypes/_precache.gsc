@@ -20,8 +20,8 @@ precache()
 	precacheShader("assassins_logo");
 	precacheShader("guards_logo");
 	precacheShader("king_marker");
-	PrecacheShader("waypoint_defend");
-	PrecacheShader("crosshair");
+	precacheShader("waypoint_defend");
+	precacheShader("crosshair");
 	precacheHeadIcon("revive");
 	precacheHeadIcon("king_marker");
 	precacheStatusIcon("vip_icon");
@@ -29,20 +29,35 @@ precache()
 	precacheStatusIcon("assassins_logo");
 	precacheStatusIcon("hud_dog_melee");
 	precacheStatusIcon("guards_logo");
+	
+	//playermodels that do not change
+	precacheModel("viewmodel_base_viewhands");
+	//assassins
+	precacheModel("head_mp_usmc_ghillie");
+	precacheModel("body_mp_usmc_woodland_sniper");
+	precacheModel("head_mp_usmc_ghillie_desert");
+	precacheModel("body_mp_usmc_desert_sniper");
+	precacheModel("head_mp_usmc_ghillie_winter");
+	precacheModel("body_mp_usmc_winter_sniper");
+	//assassins - events
+	precacheModel("body_complete_mp_predator");
+	precacheModel("body_complete_mp_predator_invisible");
+	precacheModel("body_complete_mp_alien");
+	precacheModel("body_complete_mp_alien_invisible");
+	//guards
+	precacheModel("playermodel_terminator");
+	precacheModel("playermodel_mw3_exp_juggernaunt");
+	//hardpoints & nanosuit
+	precacheModel("fake_player");
+	precacheModel("viewhands_fake_player");
+	//developer fun (removed from scripts)
+	//precacheModel("body_mp_gogo_dancer");
+	//precacheModel("head_mp_gogo_dancer");
+	
+	/*playermodels that change are precached through _charactermenu.gsc
 	precacheModel("body_complete_mp_makarov");
 	precacheModel("body_complete_mp_kennedy");
 	precacheModel("body_complete_mp_skeleton");
-	precacheModel("playermodel_terminator");
-	precacheModel("playermodel_mw3_exp_juggernaunt");
-	precacheModel("body_mp_usmc_woodland_sniper");
-	precacheModel("head_mp_usmc_ghillie");
-	precacheModel("viewmodel_base_viewhands");
-	precacheModel("body_mp_usmc_desert_sniper");
-	precacheModel("head_mp_usmc_ghillie_desert");
-	precacheModel("body_mp_usmc_winter_sniper");
-	precacheModel("head_mp_usmc_ghillie_winter");
-	precacheModel("fake_player");
-	precacheModel("viewhands_fake_player");
 	precacheModel("body_complete_mp_military_police");
 	precacheModel("body_mp_ciaagent");
 	precacheModel("head_mp_ciaagent");
@@ -53,24 +68,17 @@ precache()
 	precacheModel("head_mp_rebel");
 	precacheModel("body_mp_african");
 	precacheModel("head_mp_african1");
-	precacheModel("body_complete_mp_predator");
-	precacheModel("body_complete_mp_predator_invisible");
-	precacheModel("body_complete_mp_alien");
-	precacheModel("body_complete_mp_alien_invisible");
-	precacheModel("viewhands_fake_player");
-	precacheModel("viewmodel_base_viewhands");
-	precacheModel("body_mp_gogo_dancer");
-	precacheModel("head_mp_gogo_dancer");
+	*/
 	
 	//HUD
-	PrecacheShader("hud_grenadeicon");
-	PrecacheShader("blood_background");
-	PrecacheShader("juggernaut_view");
-	PrecacheShader("compass_waypoint_bomb");
-	PrecacheShader("waypoint_bomb");
-	PrecacheShader("waypoint_defend");
-	PrecacheShader("hud_suitcase_bomb");
-	PrecacheShader("hud_health");
+	precacheShader("hud_grenadeicon");
+	precacheShader("blood_background");
+	precacheShader("juggernaut_view");
+	precacheShader("compass_waypoint_bomb");
+	precacheShader("waypoint_bomb");
+	precacheShader("waypoint_defend");
+	precacheShader("hud_suitcase_bomb");
+	precacheShader("hud_health");
 	precacheShader("armor_overlay");
 	precacheShader("compassping_enemyfiring");
 	
@@ -102,8 +110,8 @@ precache()
 	//Manned Helicopter & Parachute Spawn
 	precacheModel("parachute");
 	precacheModel("vehicle_blackhawk");
-	PreCacheShader("white");
-	PreCacheShader("ac130_overlay_25mm");
+	precacheShader("white");
+	precacheShader("ac130_overlay_25mm");
 	level.effect["turret_dirt_impact"] = LoadFX( "impacts/20mm_dirt_impact" );
 	
 	//Dog
@@ -166,7 +174,7 @@ precache()
 	level._effect["riotshield_impact"] = loadfx( "impacts/small_metalhit" );
 	
 	//Last Stand & Revive
-	PrecacheShellShock("laststand");
+	precacheShellShock("laststand");
 }
 
 DefineWeapons()

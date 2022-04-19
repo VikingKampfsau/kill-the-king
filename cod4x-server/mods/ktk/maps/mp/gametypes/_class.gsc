@@ -250,14 +250,17 @@ cac_init()
 			level.tbl_PerkData[i]["count"] = int( tableLookup( "mp/statsTable.csv", 0, i, 5 ) );
 			level.tbl_PerkData[i]["group"] = tableLookup( "mp/statsTable.csv", 0, i, 2 );
 			level.tbl_PerkData[i]["name"] = tableLookupIString( "mp/statsTable.csv", 0, i, 3 );
-			precacheString( level.tbl_PerkData[i]["name"] );
 			level.tbl_PerkData[i]["perk_num"] = tableLookup( "mp/statsTable.csv", 0, i, 8 );
 			
 			perkReferenceToIndex[ level.tbl_PerkData[i]["reference_full"] ] = i;
 			
 			level.perkNames[level.tbl_PerkData[i]["reference_full"]] = level.tbl_PerkData[i]["name"];
 			level.perkIcons[level.tbl_PerkData[i]["reference_full"]] = level.tbl_PerkData[i]["reference_full"];
-			precacheShader( level.perkIcons[level.tbl_PerkData[i]["reference_full"]] );
+			
+			//KILL THE KING
+			//the perk info is not shown on spawn -> this conf strings can be freed
+			//precacheString( level.tbl_PerkData[i]["name"] );
+			//precacheShader( level.perkIcons[level.tbl_PerkData[i]["reference_full"]] );
 		}
 		else
 			continue;

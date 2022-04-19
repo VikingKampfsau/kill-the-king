@@ -16,6 +16,9 @@
 
 init()
 {
+	if(game["customEvent"] != "revolt")
+		return;
+
 	game["flagmodels"] = [];
 	game["flagmodels"]["neutral"] = "prop_flag_neutral";
 

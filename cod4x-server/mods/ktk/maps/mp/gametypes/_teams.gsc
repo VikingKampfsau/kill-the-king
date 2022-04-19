@@ -12,13 +12,13 @@ init()
 	precacheShader("mpflag_russian");
 	precacheShader("mpflag_spectator");
 
-	game["strings"]["autobalance"] = &"MP_AUTOBALANCE_NOW";
-	precacheString( &"MP_AUTOBALANCE_NOW" );
-	precacheString( &"MP_AUTOBALANCE_NEXT_ROUND" );
-	precacheString( &"MP_AUTOBALANCE_SECONDS" );
-
-	if(getdvar("scr_teambalance") == "")
-		setdvar("scr_teambalance", "0");
+	//KILL THE KING
+	//there is no teambalance in ktk - so free this config strings
+	//game["strings"]["autobalance"] = &"MP_AUTOBALANCE_NOW";
+	//precacheString( &"MP_AUTOBALANCE_NOW" );
+	//precacheString( &"MP_AUTOBALANCE_NEXT_ROUND" );
+	//precacheString( &"MP_AUTOBALANCE_SECONDS" );
+	
 	level.teamBalance = getdvarInt("scr_teambalance");
 	level.maxClients = getDvarInt( "sv_maxclients" );
 	

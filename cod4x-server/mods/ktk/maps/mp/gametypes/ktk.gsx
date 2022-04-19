@@ -127,7 +127,10 @@ onStartGameType()
 	allowed[0] = "war";
 	
 	if(game["customEvent"] != "sniperonly" && game["customEvent"] != "knifeonly" && game["customEvent"] != "hideandseek")
-		allowed[1] = "bombzone";
+	{
+		if(getDvarInt("scr_mod_weaponbox") > 0)
+			allowed[1] = "bombzone";
+	}
 	
 	maps\mp\gametypes\_rank::registerScoreInfo( "kill", 10 );
 	maps\mp\gametypes\_rank::registerScoreInfo( "headshot", 20 );

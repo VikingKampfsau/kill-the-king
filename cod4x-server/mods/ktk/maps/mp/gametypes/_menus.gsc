@@ -487,7 +487,7 @@ onMenuResponse()
 				}
 				if(isSubStr(response, "admin_action_changeEvent"))
 				{
-					iPrintLnBold(GetSubStr(response,25,response.size));
+					//iPrintLnBold(GetSubStr(response,25,response.size));
 					setDvar("admin_changeEvent", GetSubStr(response,25,response.size));
 					continue;
 				}

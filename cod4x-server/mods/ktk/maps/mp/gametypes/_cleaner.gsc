@@ -58,7 +58,10 @@ ReplaceCars()
 
 	for(i=0;i<exploding_cars.size;i++)
 	{
-		PrecacheModel(exploding_cars[i].model);
+		//i dont think we need to precache the model again
+		//this should already happen through map compiling
+		//PrecacheModel(exploding_cars[i].model);
+		
 		car[i] = Spawn("script_model", exploding_cars[i].origin);
 		car[i] SetModel(exploding_cars[i].model);
 		car[i].angles = exploding_cars[i].angles;
@@ -79,7 +82,10 @@ ReplaceBarrels()
 	
 	for(i=0;i<exploding_barrels.size;i++)
 	{
-		PrecacheModel(exploding_barrels[i].model);
+		//i dont think we need to precache the model again
+		//this should already happen through map compiling
+		//PrecacheModel(exploding_barrels[i].model);
+		
 		barrlel[i] = Spawn("script_model", exploding_barrels[i].origin);
 		barrlel[i] SetModel(exploding_barrels[i].model);
 		barrlel[i].angles = exploding_barrels[i].angles;

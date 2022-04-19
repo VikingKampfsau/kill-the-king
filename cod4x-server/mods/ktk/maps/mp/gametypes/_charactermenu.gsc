@@ -37,10 +37,26 @@ init()
 
 initPlayerModels()
 {
-	for(i=1;i<=50;i++)
+	//On maps with a lot of custom models the zombie event sometimes fails to precache the models
+	//since the zombie event does not use mainassassin and assassin models i change the precache order
+	thread precachePlayerModels(1, 10); //kings
+	thread precachePlayerModels(11, 20); //guards
+	
+	if(game["customEvent"] == "zombie")
+		thread precachePlayerModels(41, 50); //zombies
+
+	thread precachePlayerModels(21, 30); //mainassassins
+	thread precachePlayerModels(31, 40); //assassins
+	
+	if(game["customEvent"] != "zombie")
+		thread precachePlayerModels(41, 50); //zombies
+}
+
+precachePlayerModels(startID, endID)
+{
+	for(i=startID;i<=endID;i++)
 	{
 		struct = spawnstruct();
-		
 		struct.stat = int(tablelookup("mp/playermodels.csv", 0, i, 6));
 		struct.price = int(tablelookup("mp/playermodels.csv", 0, i, 7));
 		struct.type = toLower(tablelookup("mp/playermodels.csv", 0, i, 1));
@@ -60,17 +76,22 @@ initPlayerModels()
 		if(!isDefined(level.customCharacter[struct.type]))
 			level.customCharacter[struct.type] = [];
 		
-		if(isDefined(struct.model) && struct.model != "")
-			precacheModel(struct.model);
-			
-		if(isDefined(struct.head) && struct.head != "")
-			precacheModel(struct.head);
-			
-		if(isDefined(struct.gear) && struct.gear != "")
-			precacheModel(struct.gear);
+		precachePlayerModel(struct);
 	
 		level.customCharacter[struct.type][level.customCharacter[struct.type].size] = struct;
 	}
+}
+
+precachePlayerModel(struct)
+{
+	if(isDefined(struct.model) && struct.model != "")
+		precacheModel(struct.model);
+		
+	if(isDefined(struct.head) && struct.head != "")
+		precacheModel(struct.head);
+		
+	if(isDefined(struct.gear) && struct.gear != "")
+		precacheModel(struct.gear);
 }
 
 initModelPresentation()
